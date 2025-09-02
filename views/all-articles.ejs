@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<div class="wrap">
+  <div class="header">
+    <h1>Articles</h1>
+    <div class="sub">All posts</div>
+  </div>
+
+  <div class="grid">
+    <% articles.forEach(html => { %>
+      <%- html %>
+    <% }) %>
+  </div>
+</div>
+<%- include("./partials/footer.ejs") %>

@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<div class="wrap">
+  <div class="header">
+    <h1>Q&amp;A</h1>
+    <div class="sub">Community Questions</div>
+  </div>
+
+  <div class="grid">
+    <% questions.forEach(html => { %>
+      <%- html %>
+    <% }) %>
+  </div>
+</div>
+<%- include("./partials/footer.ejs") %>

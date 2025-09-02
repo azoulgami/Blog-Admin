@@ -1,0 +1,91 @@
+:root{
+  --bg: #ffffff;
+  --text: #222;
+  --muted: #666;
+  --accent: #2a7cff;
+  --shadow: 0 4px 12px rgba(0,0,0,.1);
+  --radius: 12px;
+  --space: 20px;
+  --maxw: 1000px;
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-image: url("/images/black.webp");
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* if your header uses .front from other pages */
+.front::after{ display:none !important; }
+.front{
+  background:none !important;
+  background-image:url("/images/black.webp") !important;
+  background-repeat:repeat !important;
+  height:auto;
+}
+
+/* layout */
+.wrap{ max-width: var(--maxw); margin: 40px auto; padding: 0 var(--space); }
+.header{ margin-bottom: 20px; color: #fff; }
+.header h1{ margin:0; font-size:28px; font-weight:700; }
+.header .sub{ color:#c7c7c7; font-size:14px; margin-top:4px; }
+
+/* responsive grid to lay out your prebuilt boxes */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* If your boxes already have .card, style them */
+.card{
+  background:#fff;
+  color:#111; /* force readable text */
+  border:1px solid #e8e8e8;
+  border-radius: var(--radius);
+  padding: var(--space);
+  box-shadow: var(--shadow);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.card:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+
+/* Fallback: if a box lacks .card, still look like a card */
+.grid > :not(.card){
+  background:#fff;
+  color:#111;
+  border:1px solid #e8e8e8;
+  border-radius: var(--radius);
+  padding: var(--space);
+  box-shadow: var(--shadow);
+}
+
+/* optional helpers if your box HTML uses these classes */
+.meta{
+  display:flex; gap:10px; font-size:13px; color: var(--muted); margin-bottom:12px;
+}
+.dot{ width:5px; height:5px; border-radius:50%; background:#aaa; align-self:center; }
+.pill-date{
+  padding:2px 8px; border-radius:999px; background:#f3f3f3; font-size:12px; color: var(--muted);
+}
+
+.article .title{ margin: 0 0 10px; font-size: 18px; color:#111 !important; }
+.article .excerpt{ margin:0 0 12px; color:#333; }
+.btn{
+  display:inline-block; padding:8px 12px; border-radius:10px;
+  border:1px solid #dcdcdc; text-decoration:none; color:#111;
+}
+.btn:hover{ border-color:#bbb; }
+
+.qa .label{
+  font-size:12px; font-weight:700; color: var(--accent);
+  text-transform:uppercase; margin-bottom:10px;
+}
+.qa .q{ padding:12px; border-left:3px solid var(--accent); background:#f9f9f9; border-radius:6px; margin-bottom:14px; }
+.qa .q .title{ margin:0; font-size:18px; color:#111 !important; font-weight:600; }
+.qa .a{ background:#fafafa; border-radius:6px; padding:12px; color:#111 !important; }
+.qa .a *{ color:inherit !important; }
+.grid { color: #111 !important; }
+.grid * { color: inherit !important; }

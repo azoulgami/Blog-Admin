@@ -1,0 +1,51 @@
+/* ANSWER form */
+.answer-form {
+  max-width: 800px;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+/* labels */
+.answer-form label {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* inputs & textarea (same dark fields) */
+.answer-form input[type="text"],
+.answer-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background: #1e1e1e;
+  color: #fff;
+  font: inherit;
+  outline: none;
+}
+
+/* focused fields: subtle green glow for "answer" */
+.answer-form input[type="text"]:focus,
+.answer-form textarea:focus {
+  border-color: #10b981;                 /* emerald */
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.18);
+}
+
+/* submit button: green accent for answers */
+.answer-form button {
+  align-self: flex-start;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #10b981;                   /* emerald */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.answer-form button:hover {
+  filter: brightness(1.1);
+}

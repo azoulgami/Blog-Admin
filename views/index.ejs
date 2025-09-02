@@ -1,0 +1,89 @@
+<%- include("./partials/header.ejs") %>
+
+                <main>
+           
+
+                <div class="inside">
+                    <div class="welcome">
+                        <h3>Welcome to the official website of <em>Sheikh</em> Said El-Kamali</h3>
+                        <hr>
+                        <button class="button-21" role="button">Read Full Biography</button>
+
+                    </div>
+
+                    <img class="kamali" src="/images/Kamali.png" alt="">
+
+                    <div class="bio">
+                        <h3>Who is <em>Sheikh</em> Said El-Kamali?</h3>
+                        <hr>
+            
+                        <p>
+                            Sheikh Dr. Said Al-Kamali (born May 21, 1972) is a prominent Moroccan scholar, specializing in Islamic jurisprudence and Hadith.
+                            Known for his deep understanding of Islamic sciences, he has made significant contributions to the study of Fiqh and Islamic scholarship. 
+                            Dr. Al-Kamali lectures widely and participates in various religious and academic events. A respected figure in Islamic circles, he is affiliated with Mohammed V University, where he completed his academic journey, earning a Bachelor’s, Master’s, and PhD. 
+                            His scholarly focus spans classical Islamic texts and contemporary religious discussions. 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            </main>
+
+            
+
+         
+             
+        
+          
+            <div class="articles-group">
+                <div class="articles-title">
+                    <h2>Articles</h2>
+                    <button class="button-20" role="button"><a href="/all-articles">More Articles</a></button>
+                </div>  
+                    <%# Articles %>
+                <% if(locals.articles)  {%>
+                        <%- articles[0] %>
+                        <%- articles[1] %>
+                        <%- articles[2] %>
+                <% } %> 
+                
+                <div class="plus">
+                    <a href="/add">
+                        <img class="plus-img" src="/images/plus.png" alt="">
+                    </a>
+                </div>
+
+
+                
+            </div>
+
+
+            <div class="question-group">
+                <div class="articles-title">
+                    <h2>Q&A</h2>
+                    <button class="button-20" role="button"><a href="/all-questions">More Q&A</a></button>
+                </div>  
+
+                    <%# Q&A %>
+                <% if(locals.questions)  {%>
+                        <%- questions[0] %>
+                        <%- questions[1] %>
+                        <%- questions[2] %>
+                <% } %> 
+
+                <div class="plus">
+                    <a href="/answer">
+                        <img class="plus-img" src="/images/plus.png" alt="">
+                    </a>
+                </div>
+                
+                
+            </div>
+
+
+        
+    
+    
+
+
+<%- include("./partials/footer.ejs") %>

@@ -1,0 +1,32 @@
+<%- include("./partials/header.ejs") %>
+<style>.front::after{ display:none !important; }</style>/
+
+
+    <div class="main">
+        
+        <form action="/submit" method="POST" class="post-form">
+        <label for="title">Title</label>
+        <input
+            id="title"
+            name="title"
+            type="text"
+            placeholder="Enter a clear, short title"
+            required
+            autocomplete="off"
+         />
+
+        <label for="content">Content</label>
+        <textarea
+            id="content"
+            name="content"
+            placeholder="Write your article here..."
+            rows="14"
+            required
+        ></textarea>
+
+        <button type="submit">Publish</button>
+        </form>
+
+    </div>
+</div>
+

@@ -1,0 +1,322 @@
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+html, body {/*needed to make full image landing page*/
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.front {
+    background-image: url("/images/black.webp");
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top:20px;
+    padding-bottom:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 25px;
+    font-family: "Open Sans";
+    list-style-type: none;
+    text-decoration: none;  
+}
+.nav-bar a {
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+.inside {
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.welcome {
+    width: 30%;
+    font-size: 30px;
+    font-family: "Roboto";
+    margin-right: 5%;
+
+}
+.welcome h3 {
+     margin-bottom: 0;
+     text-align: center;
+}
+
+
+.button-21 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 20px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-21:disabled {
+  pointer-events: none;
+}
+
+.button-21:hover {
+    background-color: white;
+    color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-21:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+.kamali {
+    width:40%;  
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%); 
+}
+
+.bio {
+    width: 30%;
+    margin-left: 2%;
+}
+.bio h3{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto";
+}
+.bio p {
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+
+.front::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(30, 30, 30, 0), rgb(30, 30, 30));
+}
+
+.articles-group a {
+    color: inherit;
+}
+.articles-group {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 5%;
+    background-color: rgb(30, 30, 30);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    
+}
+.articles-title {
+  grid-column: span 4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.articles-title h2 {
+    font-family: "Open Sans";
+    color: white;
+    margin: 0;
+}
+
+
+
+.button-20 {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 20px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+  will-change: transform;
+}
+
+.button-20:disabled {
+  pointer-events: none;
+}
+
+.button-20:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-20:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.a {
+  padding: 5%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.a:hover {
+   transform: translateY(-10px);
+}
+
+
+
+.question-group a {
+    color: inherit;
+}
+.question-group {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    background-color: rgb(30, 30, 30);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+
+    
+}
+.qa {
+  padding: 5%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+
+}
+
+.qa:hover {
+   transform: translateY(-10px);
+}
+
+
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.plus:hover {
+   transform: translateY(10px);
+}
+.plus-img {
+  width: 20%;
+}
+
+
+footer {
+  color: white;
+  text-align: center;
+  background-color:transparent;
+  width: 100%;
+  padding: 2%;
+}

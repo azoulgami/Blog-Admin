@@ -1,0 +1,32 @@
+<%- include("header.ejs") %>
+
+<% if(locals.answer && locals.date && locals.question) {%>
+
+  <div class="wrap">
+    <div class="header">
+      <h1>Q&amp;A</h1>
+      <div class="sub">Community Questions</div>
+    </div>
+
+    <section class="card qa">
+      <div class="meta">
+        <span class="pill-date"><%- date %></span>
+        <span class="dot"></span>
+        <span>Asked by Reader</span>
+      </div>
+
+      <div class="label">Question</div>
+
+      <div class="q">
+        <h3 class="title"><%= question %></h3>
+      </div>
+
+      <div class="a">
+        <strong>Answer</strong>
+        <%- answer %>
+      </div>
+    </section>
+  </div>
+<% } %>
+</div>
+<%- include("./footer.ejs") %>
